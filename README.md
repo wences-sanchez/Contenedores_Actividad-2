@@ -24,6 +24,15 @@ Después de añadir y probar la capa de instalación de los paquetes, se ha aña
 Además, se ha implementado un pequeño script de prueba en JavaScript que usa
 el puerto 3000 (tal como indica el enunciado de la práctica) para probar su funcionamiento.
 
+Para probar la aplicación en la línea de comandos se ha usado este comando:
+
+> $ docker compose run -p 3001:3000 web
+
+En el que:
+- _'web'_ es el servicio del _docker-compose_ en cuestión
+- 3000 es el puerto expuesto del contenedor
+- Y 3001 es un puerto libre cualquiera del host en el que se ha ejecutado el comando
+
 
 Por lo demás, se ha usado una imagen oficial de ubuntu con tag de la versión 22.04.
 
